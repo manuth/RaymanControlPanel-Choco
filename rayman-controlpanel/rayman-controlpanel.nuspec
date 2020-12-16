@@ -30,6 +30,6 @@ Main features:
         <releaseNotes>https://github.com/RayCarrot/RayCarrot.RCP.Metro/releases</releaseNotes>
     </metadata>
     <files>
-        <file src="tools\**" target="tools" />
+        <file src="tools\**" exclude="tools\rayman-cp.exe" target="tools" />
     </files>
 </package>
