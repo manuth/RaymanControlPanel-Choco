@@ -26,7 +26,7 @@ Main features:
         <tags>rayman modding raving rabbids</tags>
         <licenseUrl>https://github.com/RayCarrot/RayCarrot.RCP.Metro/blob/master/LICENSE</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <iconUrl>https://cdn.jsdelivr.net/gh/RayCarrot/RayCarrot.RCP.Metro@10.3.1/RayCarrot.RCP.Metro/Img/RCP_Metro.ico</iconUrl>
+        <iconUrl>https://cdn.jsdelivr.net/gh/manuth/RaymanControlPanel-Choco@e6cd9f4ecf7977d3a37ce6a362dadfe1198ca6f7/rayman-controlpanel/Icon.png</iconUrl>
         <releaseNotes>https://github.com/RayCarrot/RayCarrot.RCP.Metro/releases</releaseNotes>
     </metadata>
     <files>
