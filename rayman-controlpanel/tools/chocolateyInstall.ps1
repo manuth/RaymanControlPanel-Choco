@@ -25,5 +25,5 @@ Get-ChocolateyWebFile @packageArgs
 # }
 
 Install-ChocolateyShortcut `
-  -ShortcutFilePath $(Join-Path -Path "$([Environment]::GetFolderPath('CommonStartMenu'))" -ChildPath @("Programs", "Rayman Control Panel™.lnk")) `
-  -TargetPath "$toolsPath"
+  -ShortcutFilePath $(Join-Path -Path "$([Environment]::GetFolderPath('CommonStartMenu'))" -ChildPath $("Programs" + [System.IO.Path]::DirectorySeparatorChar + "Rayman Control Panel™.lnk")) `
+  -TargetPath $packageArgs.fileFullPath
