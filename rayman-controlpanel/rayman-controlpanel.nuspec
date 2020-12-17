@@ -3,7 +3,7 @@
     <metadata>
         <id>rayman-controlpanel</id>
         <title>Rayman Control Panel™ (Metro)</title>
-        <version>10.3.1.20201217</version>
+        <version>10.3.1.20201216</version>
         <authors>RayCarrot</authors>
         <owners>RayCarrot, Manuel Thalmann</owners>
         <summary>An open source Control Panel for modifying, configuring and running Rayman games</summary>
@@ -26,6 +26,7 @@ Main features:
         <tags>rayman modding raving rabbids</tags>
         <licenseUrl>https://github.com/RayCarrot/RayCarrot.RCP.Metro/blob/master/LICENSE</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <iconUrl>https://cdn.jsdelivr.net/gh/manuth/RaymanControlPanel-Choco@e6cd9f4ecf7977d3a37ce6a362dadfe1198ca6f7/rayman-controlpanel/Icon.png</iconUrl>
         <releaseNotes>https://github.com/RayCarrot/RayCarrot.RCP.Metro/releases</releaseNotes>
     </metadata>
     <files>
