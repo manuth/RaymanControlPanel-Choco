@@ -23,11 +23,14 @@ Main features:
 ]]></description>
         <packageSourceUrl>https://github.com/manuth/RaymanControlPanel-Choco</packageSourceUrl>
         <projectUrl>https://github.com/RayCarrot/RayCarrot.RCP.Metro</projectUrl>
+        <projectSourceUrl>https://github.com/RayCarrot/RayCarrot.RCP.Metro</projectSourceUrl>
+        <bugTrackerUrl>https://github.com/RayCarrot/RayCarrot.RCP.Metro/issues</bugTrackerUrl>
         <tags>rayman modding raving rabbids</tags>
         <licenseUrl>https://github.com/RayCarrot/RayCarrot.RCP.Metro/blob/master/LICENSE</licenseUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <iconUrl>https://cdn.jsdelivr.net/gh/manuth/RaymanControlPanel-Choco@e6cd9f4ecf7977d3a37ce6a362dadfe1198ca6f7/rayman-controlpanel/Icon.png</iconUrl>
         <releaseNotes>https://github.com/RayCarrot/RayCarrot.RCP.Metro/releases</releaseNotes>
+        <docsUrl>https://github.com/RayCarrot/RayCarrot.RCP.Metro#readme</docsUrl>
     </metadata>
     <files>
         <file src="tools\**" exclude="tools\rayman-cp.exe" target="tools" />
