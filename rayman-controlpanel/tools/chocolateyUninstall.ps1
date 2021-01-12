@@ -1,1 +1,5 @@
-﻿Remove-Item $(Join-Path -Path "$([Environment]::GetFolderPath('CommonStartMenu'))" -ChildPath $("Programs" + [System.IO.Path]::DirectorySeparatorChar + "Rayman Control Panel™.lnk"));
+﻿$shortcutFileName = [string]::Join([System.IO.Path]::DirectorySeparatorChar, @([Environment]::GetFolderPath("CommonStartMenu"), "Programs", "Rayman Control Panel™.lnk"));
+
+if (Test-Path $shortcutFileName) {
+    Remove-Item $shortcutFileName;
+}

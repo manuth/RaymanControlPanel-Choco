@@ -4,9 +4,10 @@ $packageName = $env:ChocolateyPackageName;
 $toolsPath = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)";
 $url32 = 'https://github.com/RayCarrot/RayCarrot.RCP.Metro/releases/download/10.3.1/Rayman.Control.Panel.exe';
 $checksum32 = '68d6164d9e350a5b216c0c14ae8076cfe548f987fde872fe363b3a4d17c21555';
+$fileFullPath = Join-Path $toolsPath -ChildPath "rayman-cp.exe";
 
 $packageArgs = @{
-    fileFullPath = $(Join-Path -Path $toolsPath -ChildPath "rayman-cp.exe")
+    fileFullPath = $fileFullPath
     packageName = $packageName
     url = $url32
     checksum = $checksum32
@@ -25,5 +26,5 @@ Get-ChocolateyWebFile @packageArgs;
 # }
 
 Install-ChocolateyShortcut `
-  -ShortcutFilePath $(Join-Path -Path "$([Environment]::GetFolderPath('CommonStartMenu'))" -ChildPath $("Programs" + [System.IO.Path]::DirectorySeparatorChar + "Rayman Control Panel™.lnk")) `
-  -TargetPath $packageArgs.fileFullPath;
+  -ShortcutFilePath $([string]::Join([System.IO.Path]::DirectorySeparatorChar, @([Environment]::GetFolderPath("CommonStartMenu"), "Programs", "Rayman Control Panel™.lnk"))) `
+  -TargetPath $fileFullPath
