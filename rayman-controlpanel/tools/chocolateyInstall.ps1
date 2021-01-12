@@ -16,14 +16,18 @@ $packageArgs = @{
 
 Get-ChocolateyWebFile @packageArgs;
 
-# $exeFiles = Get-ChildItem $toolsPath -Recurse -Filter *.exe;
-# $entryPoints = @();
+$exeFiles = Get-ChildItem $toolsPath -Recurse -Filter *.exe;
+$entryPoints = @($fileFullPath);
 
-# foreach ($exeFile in $exeFiles) {
-#     if (-not $entryPoints.Contains($exeFile.FullName)) {
-#         New-Item -ItemType File "$($exeFile.FullName).ignore";
-#     }
-# }
+foreach ($exeFile in $exeFiles) {
+    if (-not $entryPoints.Contains($exeFile.FullName)) {
+        $ignoreFileName = $exeFile.FullName + ".ignore";
+
+        if (-not $(Test-Path $ignoreFileName)) {
+            New-Item -ItemType File $ignoreFileName;
+        }
+    }
+}
 
 Install-ChocolateyShortcut `
   -ShortcutFilePath $([string]::Join([System.IO.Path]::DirectorySeparatorChar, @([Environment]::GetFolderPath("CommonStartMenu"), "Programs", "Rayman Control Panel™.lnk"))) `
